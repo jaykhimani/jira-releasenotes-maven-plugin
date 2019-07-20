@@ -10,6 +10,7 @@ import okhttp3.Credentials;
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
+import okhttp3.Request.Builder;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 
@@ -24,7 +25,7 @@ public class ReleaseItemsFetcher {
         String jql = requestParameters.buildJql();
         RequestBody body = RequestBody.create(APP_JSON, jql);
 
-        Request request = new Request.Builder().url(requestParameters.jiraUrl() + "/rest/api/2/search")
+        Request request = new Builder().url(requestParameters.jiraUrl() + "/rest/api/2/search")
                 .header("Authorization", basicAuth)
                 .header("Accept", APPLICATION_JSON)
                 .header("Content-type", APPLICATION_JSON)
