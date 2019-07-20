@@ -11,9 +11,9 @@ import org.apache.maven.plugins.annotations.Mojo;
 import org.apache.maven.plugins.annotations.Parameter;
 import org.apache.maven.project.MavenProject;
 
-import com.jak.maven.ImmutableRequestParameters;
-import com.jak.maven.RequestParameters;
 import com.jak.maven.fetcher.ReleaseItemsFetcher;
+import com.jak.maven.model.request.ImmutableRequestParameters;
+import com.jak.maven.model.request.RequestParameters;
 import com.jak.maven.model.response.JiraSearchResponse;
 
 /**

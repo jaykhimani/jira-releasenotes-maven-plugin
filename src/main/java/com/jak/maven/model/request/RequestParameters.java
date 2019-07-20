@@ -1,4 +1,4 @@
-package com.jak.maven;
+package com.jak.maven.model.request;
 
 import java.util.HashMap;
 import java.util.List;
@@ -29,8 +29,6 @@ public abstract class RequestParameters {
     public abstract List<String> statuses();
 
     public abstract List<String> fields();
-
-    public abstract String appConfigFile();
 
     public String buildJql() throws JsonProcessingException {
 

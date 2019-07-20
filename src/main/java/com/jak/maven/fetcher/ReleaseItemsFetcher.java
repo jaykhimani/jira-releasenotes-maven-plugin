@@ -3,7 +3,7 @@ package com.jak.maven.fetcher;
 import java.io.IOException;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.jak.maven.RequestParameters;
+import com.jak.maven.model.request.RequestParameters;
 import com.jak.maven.model.response.JiraSearchResponse;
 
 import okhttp3.Credentials;
